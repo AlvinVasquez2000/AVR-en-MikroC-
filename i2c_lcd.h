@@ -1,6 +1,12 @@
 /*LCD con I2C usando el expansor de puerto PCF8574 
-Julio 2022 hecho por Alvin Brandon Vasquez Monroy 
+Julio 2023 hecho por Alvin Brandon Vasquez Monroy 
 Version 1.0*/
+
+/*IMPORTANTE DECLARAR AQUI LA DIRECCION DEL PCF8574
+direccion 0x4E para PCF8574 pcf8574t pcf8574p
+direccion 0x7E para PCF8574A
+*/
+#define LCD_ADDR 0x4E
 
 #define NOP                       0x00
 #define CLEAR_DISPLAY             0x01
@@ -235,6 +241,6 @@ void I2C_LCD_Out_Cp(char *text) {
          I2C_LCD_Chr_Cp(*text++);
 }
 /*libreria lcd por I2c con expansor de puerto PCF8574
-diseñado por Univ. Alvin Brandon Vasquez Monroy
+diseÃ±ado por Univ. Alvin Brandon Vasquez Monroy
 se puede usar en cualquier AVR ATMEGA siempre y cuando
 tenga comunicacion I2C*/
