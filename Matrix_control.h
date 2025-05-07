@@ -264,7 +264,7 @@ void Max7219_clear(int dispositivo){
          }
      }
 }
-void Max7219_scrollIzq(char mensaje[30]){
+void Max7219_scrollIzq(char mensaje[60]){
      int i,j,k=0,l;
      char mensaje_1[30];
      int longitud ;
@@ -291,7 +291,7 @@ void Max7219_scrollIzq(char mensaje[30]){
         }
 }
 
-void Max7219_scrollDer(char mensaje[30]){
+void Max7219_scrollDer(char mensaje[60]){
      int i,j,k=0,l;
      char mensaje_1[30];
      int longitud ;
